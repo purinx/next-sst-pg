@@ -26,6 +26,20 @@ sudo npx sst tunnel install
 
 `npx sst tunnel install` is a script that installs the network interface needed to tunnel to an RDS within a VPC. Therefore, `sudo` is required.
 
+### Migration
+
+First, create a tunnel.
+```
+npx sst tunnel
+```
+
+In another tab
+
+```
+npm run db generate
+npm run db migrate
+```
+
 ## Start dev mode
 
 ```
@@ -35,6 +49,13 @@ npm run sst:dev
 ## Deploy
 
 ```
+npx sst tunnel --stage production
+```
+
+In another tab
+
+```
+sudo npx sst shell drizzle-kit migrate --stage production
 npm run sst:deploy
 ```
 
