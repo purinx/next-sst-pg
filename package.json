@@ -6,7 +6,7 @@
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start",
-    "sst:deploy": "sst deploy --stage production",
+    "sst:deploy": "sst deploy --stage production --print-logs",
     "sst:dev": "sst dev",
     "db": "sst shell drizzle-kit"
   },

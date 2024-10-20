@@ -1,5 +1,7 @@
 import { db } from '@/db';
 
+export const dynamic = 'force-dynamic';
+
 export default async function Home() {
   const data = await db.query.messageTable.findMany({
     columns: {
