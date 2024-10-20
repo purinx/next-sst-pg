@@ -32,6 +32,12 @@ sudo npx sst tunnel install
 npm run sst:dev
 ```
 
+## Deploy
+
+```
+npm run sst:deploy
+```
+
 You can view the output at http://localhost:3000.
 Additionally, you can use Drizzle Studio at https://local.drizzle.studio.
 

@@ -1,14 +1,13 @@
 {
   "name": "next-pg-app",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "sst:dev": "sst dev",
     "lint": "next lint",
     "start": "next start",
-    "deploy:production": "sst deploy --stage production",
+    "sst:deploy": "sst deploy --stage production",
+    "sst:dev": "sst dev",
     "db": "sst shell drizzle-kit"
   },
   "dependencies": {
