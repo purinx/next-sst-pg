@@ -46,6 +46,9 @@ npm run db migrate
 npm run sst:dev
 ```
 
+You can view the output at http://localhost:3000.
+Additionally, you can use Drizzle Studio at https://local.drizzle.studio.
+
 ## Deploy
 
 ```
@@ -58,9 +61,6 @@ In another tab
 sudo npx sst shell drizzle-kit migrate --stage production
 npm run sst:deploy
 ```
-
-You can view the output at http://localhost:3000.
-Additionally, you can use Drizzle Studio at https://local.drizzle.studio.
 
 ## See more
 
